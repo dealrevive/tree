@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | R.Lux Homes LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Montserrat font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+   <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="assets/logo.png" alt="R.Lux Homes Logo" class="hero-logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Main Section -->
+  <main class="contact-main">
+    <div class="container">
+      <p>We'd love to hear from you! Book a meeting or fill out the form below and we'll get back to you as soon as possible.</p>
+        <a href="https://calendly.com/affordablesitesusa" target="_blank" class="inline-block mt-4 bg-blue-100 hover:bg-blue-600 font-bold py-3 px-8 rounded-full text-lg shadow transition mb-2">
+          <i class="fa fa-calendar-alt mr-2"></i>Book a meeting
+         </a>
+      <form class="contact-form" action="https://formspree.io/f/mnnvkpar"
+  method="POST">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-dark-outline">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:info@rluxhomes.com">info@rluxhomes.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:407-555-1234">407-555-1234</a></p>
+        <p><strong>Location:</strong> Orlando, FL</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-column">
+      <h3>R.Lux Homes LLC</h3>
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column center">
+      <p>&copy; 2025 R.Lux Homes LLC. All rights reserved.</p>
+    </div>
+    <div class="footer-column">
+      <p><strong>Email:</strong> <a href="mailto:info@rluxhomes.com">info@rluxhomes.com</a></p>
+<!--       <p><strong>Phone:</strong> <a href="tel:407-555-1234">407-555-1234</a></p>
+    </div> -->
+  </footer>
+</body>
+</html>
