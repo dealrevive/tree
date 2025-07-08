@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -22,19 +26,10 @@
     <li><a href="index.html" class="block px-4 py-2 hover:text-blue-400">Home</a></li>
     <li><a href="portfolio.html" class="block px-4 py-2 hover:text-blue-400">Portfolio</a></li>
     <li><a href="about.html" class="block px-4 py-2 hover:text-blue-400">About</a></li>
-       <li><a href="blog.html" class="block px-4 py-2 text-blue-400 underline">Blog</a></li>
+    <li><a href="blog.html" class="block px-4 py-2 text-blue-400 underline">Blog</a></li>
   </ul>
 </nav>
 <script>
-  // Simple hamburger menu toggle
-  document.addEventListener('DOMContentLoaded', function() {
-    const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
-    navToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('hidden');
-    });
-  });
-</script>
   // Simple hamburger menu toggle
   document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
