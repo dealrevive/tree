@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blog | R.Lux Homes LLC</title>
+  <title>Contact | R.Lux Homes LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Montserrat font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+   <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -23,6 +30,33 @@
     <li><a href="about.html" class="block px-4 py-2 hover:text-blue-400">About</a></li>
     <li><a href="contact.html" class="block px-4 py-2 text-blue-400 underline">Contact</a></li>
     <li><a href="blog.html" class="block px-4 py-2 text-blue-400 underline">Blog</a></li>
+  </ul>
+</nav>
+<script>
+  // Simple hamburger menu toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('hidden');
+    });
+  });
+</script> <!-- Navbar -->
+  <nav class="bg-gray-900 text-white px-4 py-3 flex items-center justify-between">
+  <div class="flex items-center">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="R.Lux Homes Logo" class="h-10">
+    </a>
+  </div>
+  <button class="md:hidden block" id="nav-toggle">
+    <i class="fas fa-bars text-2xl"></i>
+  </button>
+  <ul id="nav-menu" class="md:flex space-x-8 hidden md:static absolute top-16 left-0 w-full bg-gray-900 md:bg-transparent md:w-auto md:space-x-8 md:items-center z-50">
+    <li><a href="index.html" class="block px-4 py-2 hover:text-blue-400">Home</a></li>
+    <li><a href="portfolio.html" class="block px-4 py-2 hover:text-blue-400">Portfolio</a></li>
+    <li><a href="about.html" class="block px-4 py-2 hover:text-blue-400">About</a></li>
+    <li><a href="contact.html" class="block px-4 py-2 underline hover:text-blue-400">Contact</a></li>
+    <li><a href="blog.html" class="block px-4 py-2 text-blue-400 ">Blog</a></li>
   </ul>
 </nav>
 <script>
