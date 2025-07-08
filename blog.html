@@ -2,132 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Blog | R.Lux Homes LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Montserrat font -->
+  <title>Orlando Luxury Remodeling Blog | R.Lux Homes LLC</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
-      background: white;
+      margin: 0; padding: 0;
+      background: #fff;
       color: #181818;
-      margin: 0;
       line-height: 1.6;
     }
-    nav {
-      background: white;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid #ddd;
-    }
-    nav ul {
+    header {
+      position: relative;
+      height: 60vh;
+      background: url('images/hero-luxury-home.jpg') center/cover no-repeat;
       display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      margin: 0;
-      list-style: none;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.8);
     }
-    nav a {
-      color: #181818;
+    header h1 {
+      font-size: 3rem;
+      max-width: 90%;
+      text-align: center;
       font-weight: 700;
-      text-transform: uppercase;
-      text-decoration: none;
-      letter-spacing: 1px;
-      transition: color 0.3s;
-    }
-    nav a:hover,
-    nav a.active {
-      color: #1B73E9;
-      text-decoration: underline;
+      letter-spacing: 2px;
     }
     main {
       max-width: 900px;
-      margin: 2rem auto 4rem auto;
+      margin: 2rem auto 4rem;
       padding: 0 1rem;
     }
-    h1 {
-      text-align: center;
-      font-weight: 700;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
     article {
+      margin-bottom: 3rem;
       border-bottom: 1px solid #ddd;
       padding-bottom: 2rem;
-      margin-bottom: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
     }
-    article:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
+    article img {
+      flex-shrink: 0;
+      width: 220px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #eee;
+    }
+    article div.content {
+      flex: 1;
     }
     article h2 {
+      margin-top: 0;
       font-weight: 700;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
       margin-bottom: 0.5rem;
     }
     article p {
       margin-top: 0;
+      font-size: 1rem;
+      color: #333;
     }
-    .blog-img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
+    @media(max-width: 700px) {
+      article {
+        flex-direction: column;
       }
-      article h2 {
-        font-size: 1.5rem;
+      article img {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 1rem;
       }
     }
   </style>
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="portfolio.html">PORTFOLIO</a></li>
-      <li><a href="index.html#about">ABOUT</a></li> <!-- Changed here -->
-      <li><a href="contact.html">CONTACT</a></li>
-      <li><a href="blog.html" class="active">BLOG</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main content -->
-  <main>
+  <header>
     <h1>Your Orlando Luxury Remodeling Blog</h1>
+  </header>
 
+  <main>
     <article>
-      <img src="images/blog-placeholder1.jpg" alt="Latest Remodeling Trends" class="blog-img" />
-      <h2>Latest Remodeling Trends in 2025</h2>
-      <p>Discover the top trends in home remodeling this year and how R.Lux Homes can bring them into your project. From open-concept designs to sustainable materials, stay ahead of the curve with our expert insights.</p>
+      <img src="images/placeholder1.jpg" alt="Luxury Kitchen Renovation" />
+      <div class="content">
+        <h2>Top Luxury Kitchen Renovation Trends for Orlando Homes</h2>
+        <p>Discover the latest luxury kitchen remodeling trends taking Orlando by storm in 2025. From sleek custom cabinets to innovative lighting designs, R.Lux Homes combines craftsmanship with style to create kitchens that are both functional and breathtaking. Whether you’re dreaming of modern minimalism or timeless elegance, our Orlando custom cabinets and expert interior design services will transform your space. Trust us to bring your vision to life with high-end materials and flawless execution.</p>
+      </div>
     </article>
 
     <article>
-      <img src="images/blog-placeholder2.jpg" alt="Choosing the Right Contractor" class="blog-img" />
-      <h2>How to Choose the Right Contractor</h2>
-      <p>Choosing a remodeling contractor is a big decision. Here’s what to look for and why R.Lux Homes is the right choice for your next home project.</p>
+      <img src="images/placeholder2.jpg" alt="Custom Cabinets and Carpentry" />
+      <div class="content">
+        <h2>Why Custom Cabinets Make All the Difference</h2>
+        <p>Custom cabinets are a hallmark of luxury remodeling. They allow for personalized storage solutions tailored to your lifestyle and aesthetic preferences. At R.Lux Homes, our expert carpenters craft exquisite cabinetry that elevates any room. Whether you’re looking for bespoke kitchen cabinets or elegant built-ins, our Orlando custom cabinets service ensures precision and beauty. Elevate your home interior design near me with functional art that blends perfectly with your decor.</p>
+      </div>
     </article>
 
     <article>
-      <img src="images/blog-placeholder3.jpg" alt="Maximizing Small Spaces" class="blog-img" />
-      <h2>Maximizing Small Spaces</h2>
-      <p>Tips and tricks from our experts on how to make the most out of compact living areas without sacrificing style or functionality.</p>
+      <img src="images/placeholder3.jpg" alt="Bathroom Luxury Renovation" />
+      <div class="content">
+        <h2>Luxury Bathroom Renovations: More Than Just a Remodel</h2>
+        <p>A luxury bathroom remodel is an investment in comfort and style. From radiant heated floors to spa-inspired fixtures, R.Lux Homes offers full-service remodeling to transform your space into a personal sanctuary. Our Orlando luxury remodeling experts carefully select materials and finishes that marry durability with elegance. Whether it’s a master bath renovation or a powder room refresh, we specialize in high-end interior decorating that adds lasting value to your home.</p>
+      </div>
     </article>
 
+    <article>
+      <img src="images/placeholder4.jpg" alt="Open-Concept Remodeling" />
+      <div class="content">
+        <h2>Open-Concept Remodeling: Expanding Your Living Space</h2>
+        <p>Open-concept designs remain a favorite for luxury remodeling in Orlando. By removing walls and creating flowing spaces, you increase light and foster social interaction. R.Lux Homes expertly plans and executes open-concept renovations that highlight custom carpentry and tailored interior decorating. Our designs integrate seamlessly with your existing structure while upgrading your lifestyle with spacious, elegant rooms.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/placeholder5.jpg" alt="Interior Design Near Me" />
+      <div class="content">
+        <h2>Finding Expert Interior Design Near Me in Orlando</h2>
+        <p>When searching for interior design near me in Orlando, quality and trust are paramount. R.Lux Homes offers comprehensive design and remodeling services that reflect your taste and personality. Our team works closely with you to create interiors that balance luxury and functionality. From selecting color palettes to custom cabinets and carpentry, every detail is carefully considered to deliver a home that feels truly yours.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/placeholder6.jpg" alt="Home Remodeling Project" />
+      <div class="content">
+        <h2>Maximizing Value with Whole-Home Remodeling</h2>
+        <p>Whole-home remodeling is a bold step toward luxury living. R.Lux Homes specializes in orchestrating comprehensive renovations that modernize your entire house. From kitchens and bathrooms to flooring and lighting, our Orlando luxury remodeling services are designed to maximize comfort and style. Customized interior decorating and expert craftsmanship ensure your home reflects your lifestyle and stands the test of time.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/placeholder7.jpg" alt="Wallpaper and Wall Decor Installation" />
+      <div class="content">
+        <h2>Wallpaper & Wall Decor: Finishing Touches for Your Remodel</h2>
+        <p>The right wallpaper or wall decor can elevate your interior decorating to the next level. R.Lux Homes offers professional installation services that guarantee flawless results. Whether you prefer classic patterns or modern textures, our Orlando luxury remodeling team helps you choose finishes that complement your custom cabinets and overall design. Small details make a big impact in luxury homes.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/placeholder8.jpg" alt="Doors and Windows" />
+      <div class="content">
+        <h2>Doors, Windows & Custom Trim: The Details Matter</h2>
+        <p>Luxury remodeling is in the details. Doors, windows, and custom trim work frame your home’s aesthetic and contribute to its functionality. At R.Lux Homes, we provide expert installation and custom carpentry to ensure every element meets our high standards. Enhance your Orlando home with elegant finishes and quality materials that boost curb appeal and interior charm.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/placeholder9.jpg" alt="Painting Services" />
+      <div class="content">
+        <h2>Professional Interior & Exterior Painting Services</h2>
+        <p>Painting is a quick way to refresh your home’s look and increase its value. Our painting professionals at R.Lux Homes use premium paints and techniques to deliver smooth, lasting finishes. Whether interior decorating or exterior surfaces, our Orlando luxury remodeling team works with your style and preferences to make your home shine inside and out.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/placeholder10.jpg" alt="Luxury Sunroom Addition" />
+      <div class="content">
+        <h2>Adding a Luxury Sunroom: Expand Your Living Experience</h2>
+        <p>A luxury sunroom adds light, space, and tranquility to your home. R.Lux Homes specializes in designing and building sunrooms that blend seamlessly with your existing architecture. Using custom carpentry and quality materials, we create spaces perfect for relaxing or entertaining, tailored to your lifestyle and style preferences in Orlando’s climate.</p>
+      </div>
+    </article>
   </main>
-
 </body>
 </html>
