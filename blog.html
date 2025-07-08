@@ -88,26 +88,23 @@
 <body class="font-[Montserrat] bg-white text-[#181818]">
 
   <!-- Navigation -->
-  <nav class="text-white bg-transparent absolute top-0 left-0 w-full z-50 px-4 py-3 flex items-center justify-between">
-    <div class="flex items-center">
-      <a href="index.html">
-        <img src="assets/logo.png" alt="R.Lux Homes Logo" class="h-10" />
-      </a>
-    </div>
-    <button class="md:hidden block" id="nav-toggle">
-      <i class="fas fa-bars text-2xl"></i>
-    </button>
-    <ul
-      id="nav-menu"
-      class="md:flex space-x-8 hidden md:static absolute top-16 left-0 w-full bg-gray-900 md:bg-transparent md:w-auto md:space-x-8 md:items-center z-50"
-    >
-      <li><a href="index.html" class="block px-4 py-2 hover:text-blue-400">HOME</a></li>
-      <li><a href="portfolio.html" class="block px-4 py-2 hover:text-blue-400">PORTFOLIO</a></li>
-      <li><a href="index.html#about" class="block px-4 py-2 hover:text-blue-400">ABOUT</a></li>
-      <li><a href="contact.html" class="block px-4 py-2 hover:text-blue-400">CONTACT</a></li>
-      <li><a href="blog.html" class="block px-4 py-2 underline hover:text-blue-400">BLOG</a></li>
-    </ul>
-  </nav>
+<nav class="text-white bg-transparent absolute top-0 left-0 w-full z-50 px-4 py-3 flex items-center justify-between">
+  <div class="flex items-center">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="R.Lux Homes Logo" class="h-10">
+    </a>
+  </div>
+  <button class="md:hidden block" id="nav-toggle">
+    <i class="fas fa-bars text-2xl"></i>
+  </button>
+  <ul id="nav-menu" class="md:flex space-x-8 hidden md:static absolute top-16 left-0 w-full bg-gray-900 md:bg-transparent md:w-auto md:space-x-8 md:items-center z-50">
+    <li><a href="index.html" class="block px-4 py-2 hover:text-blue-400">HOME</a></li>
+    <li><a href="portfolio.html" class="block px-4 py-2 hover:text-blue-400">PORTFOLIO</a></li>
+    <li><a href="index.html#about" class="block px-4 py-2 hover:text-blue-400">ABOUT</a></li>
+    <li><a href="contact.html" class="block px-4 py-2 hover:text-blue-400">CONTACT</a></li>
+    <li><a href="blog.html" class="block px-4 py-2 underline hover:text-blue-400">BLOG</a></li>
+  </ul>
+</nav>
 
   <script>
     // Simple hamburger menu toggle
@@ -263,8 +260,24 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-6 mt-12">
-    <p>&copy; 2025 R.Lux Homes LLC. All rights reserved.</p>
-  </footer>
+ <footer class="bg-gray-900 text-white py-6 mt-10">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+    <div>
+      <h3 class="text-lg font-bold mb-2">R.Lux Homes LLC</h3>
+      <ul>
+        <li><a href="portfolio.html" class="hover:text-blue-400">Portfolio</a></li>
+        <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+    <div class="text-center">
+      <p>&copy; 2025 R.Lux Homes LLC. All rights reserved.</p>
+    </div>
+    <div class="md:text-right">
+      <p><strong>Email:</strong> <a href="mailto:info@rluxhomes.com" class="hover:text-blue-400">info@rluxhomes.com</a></p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
