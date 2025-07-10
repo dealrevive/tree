@@ -45,40 +45,40 @@
 </script>
 
   <!-- Contact Main Section -->
-  <main class="relative min-h-screen">
-  <div
-    class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-    style="background-image: url('images/Orlando-Luxury-Home-Two.png'); z-index: 0;">
-  </div>
-    <div class="container relative z-10 bg-white bg-opacity-70 backdrop-blur-md rounded-xl p-8 my-8">
-      <p>We'd love to hear from you! Book a meeting or fill out the form below and we'll get back to you as soon as possible about your Orlando, FL remodeling project.</p>
-        <a href="https://calendly.com/affordablesitesusa" target="_blank" class="inline-block mt-4 bg-blue-100 hover:bg-blue-600 font-bold py-3 px-8 rounded-full text-lg shadow transition mb-2">
-          <i class="fa fa-calendar-alt mr-2"></i>Book a meeting
-         </a>
-      <form class="contact-form" action="https://formspree.io/f/mnnvkpar"
-  method="POST">
-        <label>
-          Name
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit" class="btn btn-dark-outline">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:info@rluxhomes.com">info@rluxhomes.com</a></p>
-<!--    <p><strong>Phone:</strong> <a href="tel:407-555-1234">407-555-1234</a></p> -->
-        <p><strong>Location:</strong> Orlando, FL</p>  
-      </div>
+  <main class="relative min-h-screen flex items-center justify-center">
+  <!-- Background Image Layer -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/your-background.jpg'); z-index: 0;"></div>
+  
+  <!-- Content Container -->
+  <div class="relative z-10 bg-white/80 backdrop-blur-md rounded-xl p-8 max-w-xl w-full mx-4">
+    <p class="text-center">We'd love to hear from you! Book a meeting or fill out the form below and we'll get back to you as soon as possible about your Orlando, FL remodeling project.</p>
+    <div class="flex justify-center mt-4 mb-2">
+      <a href="https://calendly.com/affordablesitesusa" target="_blank"
+         class="inline-block bg-blue-100 hover:bg-blue-600 font-bold py-3 px-8 rounded-full text-lg shadow transition">
+        <i class="fa fa-calendar-alt mr-2"></i>Book a meeting
+      </a>
     </div>
-  </main>
-
+    <form class="contact-form" action="https://formspree.io/f/mnnvkpar" method="POST">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="btn btn-dark-outline">Send Message</button>
+    </form>
+    <div class="contact-info text-center mt-4">
+      <p><strong>Email:</strong> <a href="mailto:info@rluxhomes.com">info@rluxhomes.com</a></p>
+      <p><strong>Location:</strong> Orlando, FL</p>  
+    </div>
+  </div>
+</main>
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-6 mt-10">
   <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
